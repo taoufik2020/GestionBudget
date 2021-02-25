@@ -69,7 +69,7 @@ public class Budget implements Serializable {
 	public float getMontant_total() {
 		return montant_total;
 	}
-	public void setMontant_total(long montant_total) {
+	public void setMontant_total(float montant_total) {
 		this.montant_total = montant_total;
 	}
 	public Date getDate_budget() {
