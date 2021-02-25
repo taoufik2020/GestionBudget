@@ -22,13 +22,13 @@ public class Centre_responsabiliteService implements Centre_responsabiliteInterf
 	}
 
 	@Override
-	public void Delete(Integer id_centre_responsabilite) {
+	public void supprimer(Integer id_centre_responsabilite) {
 		// TODO Auto-generated method stub
 		centre_responsabiliteRepository.deleteById(id_centre_responsabilite);
 	}
 
 	@Override
-	public Centre_responsabilite Add(Centre_responsabilite c) {
+	public Centre_responsabilite ajouter(Centre_responsabilite c) {
 		// TODO Auto-generated method stub
 		return centre_responsabiliteRepository.save(c);
 	}

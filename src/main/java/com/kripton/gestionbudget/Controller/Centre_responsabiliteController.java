@@ -26,7 +26,7 @@ public class Centre_responsabiliteController {
 	@PostMapping("/add")
 	public Centre_responsabilite ajoutCentreResponsabilite(@RequestBody Centre_responsabilite c) {
 		if(c != null) {
-			return centre_responsabiliteInterface.Add(c);
+			return centre_responsabiliteInterface.ajouter(c);
 		}
 		return null;
 	}
@@ -39,7 +39,7 @@ public class Centre_responsabiliteController {
 	@DeleteMapping("/delete/{id}")
 	public void DeleteCentreResponsabilite(@PathVariable Integer id) {
 		
-		centre_responsabiliteInterface.Delete(id);
+		centre_responsabiliteInterface.supprimer(id);
 		
 	}
 	@PutMapping("/modifier")

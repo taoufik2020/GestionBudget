@@ -21,7 +21,7 @@ public class BudgetService implements BudgetInterface {
 	}
 
 	@Override
-	public void Delete(Integer id_budget) {
+	public void Supprimer(Integer id_budget) {
 		// TODO Auto-generated method stub
 		budgetrepository.deleteById(id_budget);
 	}

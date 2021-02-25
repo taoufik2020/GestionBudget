@@ -38,7 +38,7 @@ public class BudgetController {
 	}
 	@DeleteMapping("/delete/{id}")
 	public void supprimerBudget(@PathVariable Integer id) {
-		budgetinterface.Delete(id);
+		budgetinterface.Supprimer(id);
 	}
 	@PutMapping("/modifier")
 	public Budget modifierBudget(@RequestBody Budget budget) {
